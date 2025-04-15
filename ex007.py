@@ -16,7 +16,7 @@ O valor inicial é opcional, se não for informado, o valor padrão será 0.
 O valor final é obrigatório, se não for informado, o loop não será executado. O valor do passo é opcional, se não for informado, o valor padrão será 1.
 O valor do passo pode ser negativo, nesse caso o valor inicial deve ser maior que o valor final. Se o valor do passo for 0, ocorrerá um erro de execução.
 
-exemplo:
+exemplo I:
     for cont in range(0, 10, 1):
         print(cont)
         range = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -32,4 +32,11 @@ exemplo:
         range = [0, 2, 4, 6, 8]
         # 10 não é incluído na lista.
 
-        '''
+
+exemplo II: For encadeado - TABUADA'''
+
+for n1 in range(1, 4):
+    for n2 in range(1, 11):
+        print(n1, 'X', n2, '=', n1*n2)
+    print('\n')
+
